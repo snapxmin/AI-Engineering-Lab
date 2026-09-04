@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="实验：让 Agent 自己跑完一次代码评审，记录提示词、工具调用与失败样本。"
+    />
+    <title>让 Agent 自己跑完一次代码评审 · AI Engineering Lab</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .article-shell { max-width: 760px; margin: auto; padding: 100px 32px 120px; }
+      .article-shell .eyebrow { margin-bottom: 18px; }
+      .article-shell h1 { max-width: 100%; margin: 0 0 30px; font-size: clamp(32px, 5vw, 48px); line-height: 1.1; letter-spacing: -.04em; }
+      .article-shell .lede { color: var(--muted); font-size: 18px; line-height: 1.8; margin-bottom: 40px; }
+      .article-shell h2 { font-size: 24px; margin: 48px 0 16px; letter-spacing: -.03em; }
+      .article-shell p { font-size: 16px; line-height: 1.9; margin: 0 0 20px; }
+      .article-shell ul { margin: 0 0 20px; padding-left: 20px; }
+      .article-shell li { font-size: 16px; line-height: 1.9; margin-bottom: 10px; }
+      .back-link { display: inline-block; margin-bottom: 40px; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" aria-label="AI Engineering Lab 首页">
+        <span class="brand-mark">✦</span>
+        <span>AI Engineering <strong>Lab</strong></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="../index.html#weekly">每周四件事</a>
+        <a href="../index.html#roadmap">成长路线</a>
+        <a class="nav-cta" href="../index.html#about">关于实验室</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article-shell">
+        <a class="text-link back-link" href="../index.html#weekly">← 返回每周四件事</a>
+        <p class="eyebrow">实验 · EXPERIMENT</p>
+        <h1>让 Agent 自己跑完一次代码评审</h1>
+        <p class="lede">记录提示词、工具调用与失败样本，用真实数据而不是感觉评估效果。</p>
+        <h2>把评审过程变成可观察的实验</h2>
+        <p>一次 Agent 代码评审不应只留下“通过”或“拒绝”的结论。我们需要保留它接收了哪些上下文、调用了哪些工具，以及每一步为何改变了判断。</p>
+        <h2>实验记录什么</h2>
+        <ul>
+          <li><strong>提示词：</strong>任务说明、代码范围和评审标准是否足够明确。</li>
+          <li><strong>工具调用：</strong>Agent 是否查看 diff、运行测试并追溯相关实现。</li>
+          <li><strong>失败样本：</strong>遗漏、误报和无法判断的案例，都是下一轮改进的输入。</li>
+        </ul>
+        <h2>评估的重点</h2>
+        <p>评估不只看发现了多少问题，还要看问题是否真实、理由能否复核，以及流程能否稳定地重复。只有把失败也记录下来，团队才能知道该改提示词、补工具，还是调整验证环境。</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <span>© 2026 AI Engineering Lab</span>
+      <span>AI Agent · Software R&amp;D · Compute</span>
+    </footer>
+  </body>
+</html>
