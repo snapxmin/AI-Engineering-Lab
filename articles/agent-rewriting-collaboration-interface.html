@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="深度观点：Agent 正在重写软件研发的协作界面。从“让模型写代码”走向“让系统验证决策”，软件工程的核心正在迁移。"
+    />
+    <title>Agent 正在重写软件研发的协作界面 · AI Engineering Lab</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .article-shell { max-width: 760px; margin: auto; padding: 100px 32px 120px; }
+      .article-shell .eyebrow { margin-bottom: 18px; }
+      .article-shell h1 { max-width: 100%; margin: 0 0 30px; font-size: clamp(32px, 5vw, 48px); line-height: 1.1; letter-spacing: -.04em; }
+      .article-shell .lede { color: var(--muted); font-size: 18px; line-height: 1.8; margin-bottom: 40px; }
+      .article-shell h2 { font-size: 24px; margin: 48px 0 16px; letter-spacing: -.03em; }
+      .article-shell p { font-size: 16px; line-height: 1.9; margin: 0 0 20px; }
+      .article-shell ul { margin: 0 0 20px; padding-left: 20px; }
+      .article-shell li { font-size: 16px; line-height: 1.9; margin-bottom: 10px; }
+      .back-link { display: inline-block; margin-bottom: 40px; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" aria-label="AI Engineering Lab 首页">
+        <span class="brand-mark">✦</span>
+        <span>AI Engineering <strong>Lab</strong></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="../index.html#weekly">每周四件事</a>
+        <a href="../index.html#roadmap">成长路线</a>
+        <a class="nav-cta" href="../index.html#about">关于实验室</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="article-shell">
+        <a class="text-link back-link" href="../index.html#weekly">← 返回每周四件事</a>
+        <p class="eyebrow">深度观点 · DEEP DIVE</p>
+        <h1>Agent 正在重写软件研发的协作界面</h1>
+        <p class="lede">从“让模型写代码”走向“让系统验证决策”，软件工程的核心正在迁移。</p>
+
+        <h2>写代码不再是稀缺能力</h2>
+        <p>
+          过去两年，大模型在代码生成上的进步让“写代码”本身逐渐变成一种可以被自动化、被并行调用的能力。真正稀缺的，
+          不再是谁能写出可运行的代码，而是谁能对一堆由 Agent 产生的候选方案做出可靠、可追溯的判断。协作的瓶颈，
+          正在从“生成”转移到“验证”。
+        </p>
+
+        <h2>从人审代码，到系统验证决策</h2>
+        <p>
+          在传统流程里，代码评审依赖工程师的经验和注意力：读 diff、跑测试、凭直觉判断风险。
+          当 Agent 每天能产出数十倍于人类的改动时，这种依赖人工注意力的评审模式会成为新的瓶颈。
+          真正可扩展的协作界面，需要把“这个决策是否可信”这件事交给系统去验证——通过可复现的测试、
+          可解释的日志、可对比的基线，让判断本身变得可自动化、可审计。
+        </p>
+
+        <h2>协作界面的三个变化</h2>
+        <ul>
+          <li><strong>输入变了：</strong>工程师给出的不再只是需求文档，而是可执行的约束、验收标准和失败样本。</li>
+          <li><strong>产出变了：</strong>Agent 交付的不只是代码，还包括它做出每个决策的证据链——为什么这样改、验证过什么、还有哪些风险未覆盖。</li>
+          <li><strong>信任机制变了：</strong>人从逐行审查转向对系统整体验证能力的信任校准，聚焦在“这套验证是否足够严格”而不是“这段代码写得好不好”。</li>
+        </ul>
+
+        <h2>对工程团队意味着什么</h2>
+        <p>
+          这意味着团队需要投入更多精力在可验证的基础设施上：更全面的测试覆盖、更清晰的评审标准、
+          更透明的 Agent 行为日志。谁能先把“验证”这件事系统化，谁就能在 Agent 密度更高的研发流程里，
+          保持交付质量和迭代速度的平衡。这也是本实验室后续实验会持续跟进的方向。
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 AI Engineering Lab</span>
+      <span>AI Agent · Software R&amp;D · Compute</span>
+    </footer>
+  </body>
+</html>
