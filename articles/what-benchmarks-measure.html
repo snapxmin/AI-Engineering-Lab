@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="科普：Benchmark 到底在测什么？建立工程判断所需的共同语言。"
+    />
+    <title>Benchmark 到底在测什么？ · AI Engineering Lab</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .article-shell { max-width: 760px; margin: auto; padding: 100px 32px 120px; }
+      .article-shell .eyebrow { margin-bottom: 18px; }
+      .article-shell h1 { max-width: 100%; margin: 0 0 30px; font-size: clamp(32px, 5vw, 48px); line-height: 1.1; letter-spacing: -.04em; }
+      .article-shell .lede { color: var(--muted); font-size: 18px; line-height: 1.8; margin-bottom: 40px; }
+      .article-shell h2 { font-size: 24px; margin: 48px 0 16px; letter-spacing: -.03em; }
+      .article-shell p { font-size: 16px; line-height: 1.9; margin: 0 0 20px; }
+      .article-shell ul { margin: 0 0 20px; padding-left: 20px; }
+      .article-shell li { font-size: 16px; line-height: 1.9; margin-bottom: 10px; }
+      .back-link { display: inline-block; margin-bottom: 40px; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" aria-label="AI Engineering Lab 首页">
+        <span class="brand-mark">✦</span>
+        <span>AI Engineering <strong>Lab</strong></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="../index.html#weekly">每周四件事</a>
+        <a href="../index.html#roadmap">成长路线</a>
+        <a class="nav-cta" href="../index.html#about">关于实验室</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article-shell">
+        <a class="text-link back-link" href="../index.html#weekly">← 返回每周四件事</a>
+        <p class="eyebrow">科普 · EXPLAINED</p>
+        <h1>Benchmark 到底在测什么？</h1>
+        <p class="lede">把复杂概念拆成可理解的模型，建立工程判断所需的共同语言。</p>
+        <h2>Benchmark 不是模型的总分</h2>
+        <p>Benchmark 是一套被固定下来的任务、数据和评分规则。它回答的是“在这些条件下，系统完成这类任务的表现如何”，而不是“这个模型在所有真实场景中有多强”。</p>
+        <h2>看懂三个组成部分</h2>
+        <ul>
+          <li><strong>任务：</strong>它要求模型解决什么问题，是否接近你的实际工作。</li>
+          <li><strong>数据：</strong>样本是否新鲜、是否存在泄漏，以及难度如何分布。</li>
+          <li><strong>指标：</strong>分数奖励的是准确率、速度、成本，还是可靠性。</li>
+        </ul>
+        <h2>怎样用于工程决策</h2>
+        <p>先用公开 Benchmark 缩小候选范围，再针对自己的任务、工具链和约束做评测。把分数转化为可验证的问题：它在哪些任务上稳定，失败时是否可预期，投入的成本是否值得。</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <span>© 2026 AI Engineering Lab</span>
+      <span>AI Agent · Software R&amp;D · Compute</span>
+    </footer>
+  </body>
+</html>

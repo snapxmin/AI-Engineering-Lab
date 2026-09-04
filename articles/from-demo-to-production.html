@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="行业观察：从 Demo 到生产，差的不是一个模型。"
+    />
+    <title>从 Demo 到生产，差的不是一个模型 · AI Engineering Lab</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .article-shell { max-width: 760px; margin: auto; padding: 100px 32px 120px; }
+      .article-shell .eyebrow { margin-bottom: 18px; }
+      .article-shell h1 { max-width: 100%; margin: 0 0 30px; font-size: clamp(32px, 5vw, 48px); line-height: 1.1; letter-spacing: -.04em; }
+      .article-shell .lede { color: var(--muted); font-size: 18px; line-height: 1.8; margin-bottom: 40px; }
+      .article-shell h2 { font-size: 24px; margin: 48px 0 16px; letter-spacing: -.03em; }
+      .article-shell p { font-size: 16px; line-height: 1.9; margin: 0 0 20px; }
+      .article-shell ul { margin: 0 0 20px; padding-left: 20px; }
+      .article-shell li { font-size: 16px; line-height: 1.9; margin-bottom: 10px; }
+      .back-link { display: inline-block; margin-bottom: 40px; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" aria-label="AI Engineering Lab 首页">
+        <span class="brand-mark">✦</span>
+        <span>AI Engineering <strong>Lab</strong></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="../index.html#weekly">每周四件事</a>
+        <a href="../index.html#roadmap">成长路线</a>
+        <a class="nav-cta" href="../index.html#about">关于实验室</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article-shell">
+        <a class="text-link back-link" href="../index.html#weekly">← 返回每周四件事</a>
+        <p class="eyebrow">行业观察 · FIELD NOTES</p>
+        <h1>从 Demo 到生产，差的不是一个模型</h1>
+        <p class="lede">观察产品、组织和算力如何共同决定 Agent 的落地边界。</p>
+        <h2>Demo 展示能力，生产交付责任</h2>
+        <p>Demo 往往运行在精心挑选的任务和环境里；生产系统必须面对脏数据、权限边界、长尾异常和持续变化的业务规则。模型能力只是其中一个变量。</p>
+        <h2>三个经常被低估的条件</h2>
+        <ul>
+          <li><strong>产品边界：</strong>明确 Agent 可以决定什么、何时升级给人，以及失败后怎样恢复。</li>
+          <li><strong>组织协作：</strong>让领域专家、工程团队和运营人员共同定义验收标准与反馈闭环。</li>
+          <li><strong>算力与成本：</strong>在延迟、吞吐和单次任务成本之间建立可持续的预算。</li>
+        </ul>
+        <h2>落地从小而可验证的流程开始</h2>
+        <p>最有效的起点通常不是追逐一个更大的模型，而是选择高频、边界清晰、能回收反馈的工作流。在真实约束下持续测量，系统才会从一次演示逐步成为可靠能力。</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <span>© 2026 AI Engineering Lab</span>
+      <span>AI Agent · Software R&amp;D · Compute</span>
+    </footer>
+  </body>
+</html>
